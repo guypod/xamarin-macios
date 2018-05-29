@@ -237,7 +237,7 @@ timestamps {
                         }
                     }
 
-                    dir ("{workspace}") {
+                    dir ("${workspace}") {
                         stage ('Provisioning') {
                             currentStage = "${STAGE_NAME}"
                             echo ("Building on ${env.NODE_NAME}")
